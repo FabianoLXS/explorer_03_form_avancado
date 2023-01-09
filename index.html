@@ -14,6 +14,7 @@
 </head>
 <body>
 <header>
+  <img src="images\img1.png" alt="balão vermelho com 5 estrelas"/>
   <h1>AVALIE A SUA MENTORIA</h1>
   <p>Chegou a hora de avaliar o seu mentor. Bora la?</p>
 </header>
@@ -48,13 +49,67 @@
       </div>
     </div>
   </fieldset>
-  <h1>INFORMAÇÕES PESSOAIS</h1>
-  <p>Nome</p>
-  <p>Sobrenome</p>
-  <p>Email<span>digite um email válido</span></p>
-  <p>INFORMAÇÕES DO MENTOR</p>
-  <p>Selecione quem foi o seu mentor</p>
-  <p>Feedback sobre o mentor</p>
+
+  <fieldset>
+    <div class="fieldset-wrapper">
+      <legend>Informações do mentor</legend>
+
+      <div class="input-wrapper">
+        <label for="event-title">Selecione quem foi o seu mentor</label>
+        <input 
+          type="text"
+          id="event-title"
+          required />
+
+          <div class="input-wrapper">
+            <label for="event-title">Feedback sobre o seu mentor</label>
+            <input 
+              type="text" 
+              id="event-title"
+              required />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="event-title">Todas as minhas dúvidas foram esclarecidas durante a mentoria. </label>
+            <input 
+              type="text" 
+              id="event-title"
+              required />
+          </div>
+      </div>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <div class="fieldset-wrapper">
+      <legend>Agendando próxima mentoria</legend>
+
+      <div class="input-wrapper">
+        <label for="event-title">Data<span> (DD/AA/AAAA)</span></label>
+        <input 
+          type="text"
+          id="event-title"
+          required />
+
+          <div class="input-wrapper">
+            <label for="event-title">Das</label>
+            <input 
+              type="time" 
+              id="event-title"
+              required />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="event-title">Até</label>
+            <input 
+              type="time" 
+              id="event-title"
+              required />
+          </div>
+      </div>
+    </div>
+  </fieldset>
+
 </main>
 
 
