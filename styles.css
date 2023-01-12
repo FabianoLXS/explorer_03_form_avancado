@@ -8,24 +8,13 @@ body {
   background: #BFD7E4;
 }
 
-body::before {
-  content: '';
-  width: 100%;
-  height: 368px;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background: #293241;
-}
-
 header {
   display: flex;
   align-items:  center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 107px;
+  height: 407px;
+  background: #293241;
 }
 
 header h1 {
@@ -49,35 +38,41 @@ header img {
 }
 
 #my-form {
-  padding: 64px;
   width: 750px;
+  margin: auto;
   
   border-radius: 20px;
 }
 
 fieldset {
   border: none;
+  border-bottom: 1px solid #E6E6F0;
+  
   font-family: 'Poppins';
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;  
-
-  color: #4E4958;
-  border-bottom: 1px solid #E6E6F0;
+  
   width: 100%;
+  top: 0;
+  color: #4E4958;
+
+  
 }
 
 #info_pessoal{
   background: #F67669;
-  width: 750px;
   height: 133px;
-
+  margin-bottom: 30px;
+  
+ 
   font-family: 'Staatliches';
   font-weight: 400;
   font-size: 24px;
   padding-top: 50px;
 
-  color: #FFFFFF
+  color: #FFFFFF;
+  border-radius: 20px 20px 0px 0px;
 }
 
 fieldset legend {
@@ -89,7 +84,54 @@ fieldset legend {
   justify-content: center;
 
   color: #253B51;
-
-
 }
 
+.fieldset-wrapper{
+background: #FFFFFF;
+padding-top: 32px;
+padding: 64px;
+}
+
+#fld_pessoal{
+  padding-top: 0;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset legend{
+  border-bottom: 1px solid #E6E6F0;
+  width: 100%;
+  margin: auto;
+  padding-bottom: 8px;
+   
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  background: #FFFFFF;
+  border-radius: 0px 0px 20px 20px;
+  height: 179px;
+}
+
+button{
+  background: #F67669;
+  color: #FFFFFF;
+
+  width: 495px;
+  height: 51px;
+
+  font-family: 'Staatliches';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+
+  border: none;
+}
