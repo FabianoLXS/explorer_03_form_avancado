@@ -24,32 +24,35 @@
 <form id="my-form">
   <fieldset>
     <div class="fieldset-wrapper" id="fld_pessoal">
-      <legend id="info_pessoal">Informações pessoais</legend>
-
-      <div class="input-wrapper">
-        <label for="event-title">Nome</label>
-        <input 
-          type="text" 
-          id="event-title"
-          required />
-
+        <legend id="info_pessoal">Informações pessoais</legend>
+      <div class="pessoal">  
           <div class="input-wrapper">
-            <label for="event-title">Sobrenome</label>
+            <label for="event-name">Nome</label>
             <input 
               type="text" 
-              id="event-title"
+              id="event-name"
               required />
           </div>
 
           <div class="input-wrapper">
-            <label for="event-title">Email<span>(digite um email válido)</span></label>
+            <label for="event-name">Sobrenome</label>
             <input 
               type="text" 
-              id="event-title"
+              id="event-name"
               required />
           </div>
       </div>
+    
+
+    <div class="input-wrapper">
+      <label for="event-email">Email<span>(digite um email válido)</span></label>
+      <input 
+        type="email" 
+        id="event-email"
+        required />
     </div>
+  </div>
+
   </fieldset>
 
   <fieldset>
@@ -57,26 +60,27 @@
       <legend>Informações do mentor</legend>
 
       <div class="input-wrapper">
-        <label for="event-title">Selecione quem foi o seu mentor</label>
-        <input 
-          type="text"
-          id="event-title"
-          required />
+        <label for="event-category">Selecione quem foi o seu mentor</label>
+          <select id="event-category">
+            <option value=""></option>
+            <option value="Mentor 1"> Mentor 1</option>
+            <option value="Mentor 2"> Mentor 2</option>
+          </select>
 
           <div class="input-wrapper">
-            <label for="event-title">Feedback sobre o seu mentor</label>
+            <label for="event-feedback">Feedback sobre o seu mentor</label>
             <input 
               type="text" 
-              id="event-title"
+              id="event-feedback"
               required />
           </div>
 
           <div class="input-wrapper">
-            <label for="event-title">Todas as minhas dúvidas foram esclarecidas durante a mentoria. </label>
-            <input 
-              type="text" 
+              <input 
+              type="checkbox" 
               id="event-title"
               required />
+              <label for="event-title">Todas as minhas dúvidas foram esclarecidas durante a mentoria. </label>
           </div>
       </div>
     </div>
@@ -87,25 +91,25 @@
       <legend>Agendando próxima mentoria</legend>
 
       <div class="input-wrapper">
-        <label for="event-title">Data<span> (DD/AA/AAAA)</span></label>
+        <label for="event-date">Data<span> (DD/MM/AAAA)</span></label>
         <input 
-          type="text"
-          id="event-title"
+          type="date"
+          id="event-date"
           required />
 
           <div class="input-wrapper">
-            <label for="event-title">Das</label>
+            <label for="event-begin">Das</label>
             <input 
               type="time" 
-              id="event-title"
+              id="event-time"
               required />
           </div>
 
           <div class="input-wrapper">
-            <label for="event-title">Até</label>
+            <label for="event-end">Até</label>
             <input 
               type="time" 
-              id="event-title"
+              id="event-time"
               required />
           </div>
       </div>
@@ -113,10 +117,6 @@
   </fieldset>
 
 </main>
-
-
-
-
 
 <footer>
   <button>SALVAR</button>

@@ -37,17 +37,19 @@ header img {
   margin-top: 24px;
 }
 
-#my-form {
-  width: 750px;
+form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -60px;
   margin: auto;
-  
+
+  width: 750px;
   border-radius: 20px;
 }
 
 fieldset {
   border: none;
-  border-bottom: 1px solid #E6E6F0;
-  
   font-family: 'Poppins';
   font-weight: 400;
   font-size: 14px;
@@ -56,16 +58,20 @@ fieldset {
   width: 100%;
   top: 0;
   color: #4E4958;
-
-  
 }
+label span{
+  color: #C1BCCC;
+  margin-left: 8px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
 
 #info_pessoal{
   background: #F67669;
   height: 133px;
   margin-bottom: 30px;
-  
- 
+   
   font-family: 'Staatliches';
   font-weight: 400;
   font-size: 24px;
@@ -73,7 +79,13 @@ fieldset {
 
   color: #FFFFFF;
   border-radius: 20px 20px 0px 0px;
+
 }
+
+#fld_pessoal{
+  padding-top: 0;
+  border-radius: 20px 20px 0px 0px;
+  }
 
 fieldset legend {
   font-family: 'Staatliches';
@@ -83,31 +95,121 @@ fieldset legend {
   text-align: center;
   justify-content: center;
 
-  color: #253B51;
-}
-
-.fieldset-wrapper{
-background: #FFFFFF;
-padding-top: 32px;
-padding: 64px;
-}
-
-#fld_pessoal{
-  padding-top: 0;
-  border-radius: 20px 20px 0px 0px;
-}
-
-.input-wrapper{
-  display: flex;
-  flex-direction: column;
-}
-
-fieldset legend{
   border-bottom: 1px solid #E6E6F0;
   width: 100%;
   margin: auto;
   padding-bottom: 8px;
-   
+
+  color: #253B51;
+}
+
+.fieldset-wrapper{
+  background: #FFFFFF;
+  padding-top: 32px;
+  padding-right: 64px;
+  padding-left: 64px;
+}
+
+/*.input-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+*/
+
+.input-wrapper label{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.input-wrapper input{
+  padding: 0 24px;
+}
+
+.input-wrapper select{
+  appearance: none;
+  -webkit-appearance: none;
+
+  padding: 0 24px;
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+
+  font-family: 'Poppins';
+
+  font-size: 14px;
+  line-height: 24px;
+  color: #4E4958;
+
+}
+
+#event-name{
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+
+  width: 300px;
+  height: 55px;
+}
+
+#event-category{
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+
+  width: 300px;
+  height: 55px;
+}
+
+#event-email{
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+
+  width: 622px;
+  height: 55px;
+}
+
+#event-feedback{
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+
+  width: 608px;
+  height: 167px;
+}
+
+#event-date{
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  width: 300px;
+  height: 55px;
+
+  font-family: 'Poppins';
+
+  font-size: 14px;
+  line-height: 24px;
+  color: #645f70;
+}
+
+#event-time{
+  appearance: none;
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+
+  width: 140px;
+  height: 55px;
+  
+  font-family: 'Poppins';
+
+  font-size: 14px;
+  line-height: 24px;
+  color: #645f70;
 }
 
 footer{
@@ -119,6 +221,7 @@ footer{
   background: #FFFFFF;
   border-radius: 0px 0px 20px 20px;
   height: 179px;
+  margin-bottom: 392px;
 }
 
 button{
